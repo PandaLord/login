@@ -1,0 +1,85 @@
+.logoArea,
+.linkDiv,
+form {
+    display:inline-flex;
+    align-items:flex-start;
+    
+}
+.link {
+  text-decoration: none;
+  &:link
+  &:hover,
+  &:focus,
+  &:active,
+  &:visited,
+   {
+    color:rgb(9, 128, 226);
+    
+  }
+
+}
+form {
+    flex:4 1 auto;
+}
+
+.logoArea,
+.linkDiv {
+    flex:1 1 auto;
+    align-content:center;
+    justify-content: space-around;
+    .logo {
+        color:rgb(9, 128, 226);
+        font-size:1.2rem;
+        font-weight:bold;
+        line-height:1.2rem;
+    }
+}
+.link {
+    flex:0 0 auto;
+    padding-left:5px;
+}
+
+
+.logoArea {
+    flex:0 1 auto;
+}
+
+.inputArea {
+    display:flex;
+    flex:2 1 auto;
+    align-items:center;
+    align-content:center;
+    
+        input {
+            flex:2 0 auto;
+            background: transparent;
+            border:none;
+            outline:none;
+            resize:none;
+        }
+        mt-button {
+            flex:1 1 auto;
+            
+        }
+}
+
+header {
+    display:flex;
+    align-content:space-between;
+    align-items:center;
+    white-space:nowrap; 
+    width:900px;
+    height:100%;
+    margin:0 auto;
+    background:inherit;
+}
+
+.header {
+    position:fixed;
+    background:rgb(255, 255, 255);
+    width:100%;
+    height:50px;
+    top:0;
+    left:0;
+    z-index:9999999;
+}
